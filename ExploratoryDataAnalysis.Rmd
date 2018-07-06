@@ -1,0 +1,52 @@
+---
+layout: post
+title: " Exploratory Data Analysis"
+output: rmarkdown::github_document
+always_allow_html: yes
+author: Nana Boateng
+#toc: true
+toc_depth: 2
+df_print: paged
+Time: '`r Sys.time()`'
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+---
+
+
+
+
+Load Required Packages
+---------------------------------
+
+```{r}
+library(pacman)
+
+pacman::p_load(tidyverse,janitor,DataExplorer,skimr)
+
+
+```
+
+
+The ISLR package created to store the  data for  Introduction to Statistical Learning with Applications in R(Gareth James, Daniela Witten, Trevor Hastie and Rob Tibshirani)
+
+The dataset can be found [here]("https://www.machinelearningplus.com/machine-learning/caret-package/#63preparethetestdatasetandpredict")
+
+[here](http://rmarkdown.rstudio.com)
+
+For this tutorial, I am going to use a modified version of the Orange Juice Data, originally made available in the ISLR package.
+
+The goal of this dataset is to predict which of the two brands of orange juices did the customers buy.
+
+The predictor variables are characteristics of the customer and the product itself. It contains 1070 rows with 18 columns. The response variable is ‘Purchase’ which takes either the value ‘CH'(citrus hill) or ‘MM'(minute maid).
+
+```{r}
+# Import dataset
+orangejuice<-read_csv('https://raw.githubusercontent.com/selva86/datasets/master/orange_juice_withmissing.csv')
+
+orangejuice
+
+write_csv(orangejuice,"/Users/nanaakwasiabayieboateng/Documents/memphisclassesbooks/DataMiningscience/orangejuice.csv")
+
+#ExploratoryDataAnalysis
+```
+
+
