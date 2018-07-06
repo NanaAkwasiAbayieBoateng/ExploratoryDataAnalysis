@@ -18,6 +18,7 @@ Load Required Packages
 ---------------------------------
 
 ```{r}
+#install.packages("pacman")
 library(pacman)
 
 pacman::p_load(tidyverse,janitor,DataExplorer,skimr)
