@@ -17,7 +17,9 @@ highlight: tango  # specifies the syntax highlighting style
 ---
 
 
-
+Introduction
+---------------------------------
+In this post, I would like to go through some common methods of data exploration. Data exploration is one of the introductory analysis that is performed before any model building task. Data exploration can uncover some hidden patterns and  lead to  insights into the  some phenomenom behind the data.It can inform the selection of appropriate statistical techniques,tools and models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the causes of the observed phenomena in the data. We can also detect outliers and anomalies in the data through exploration. Exploratory analysis emphasizes graphical visualizations of the data.
 
 ```{r setup,include=FALSE}
 
@@ -57,9 +59,7 @@ theme_set(theme_pubclean())
 ```
 
 
-Introduction
----------------------------------
-In this post, I would like to go through some common methods of data exploration. Data exploration is one of the introductory analysis that is performed before any model building task. Data exploration can uncover some hidden patterns and  lead to  insights into the  some phenomenom behind the data.It can inform the selection of appropriate statistical techniques,tools and models. Exploratory techniques are also important for eliminating or sharpening potential hypotheses about the causes of the observed phenomena in the data. We can also detect outliers and anomalies in the data through exploration. Exploratory analysis emphasizes graphical visualizations of the data.
+
 
 The data for this analysis Orange Juice data, is contained in the ISLR package.The ISLR package created to store the  data for the popular introductory statistical learning text,  Introduction to Statistical Learning with Applications in R (Gareth James, Daniela Witten, Trevor Hastie and Rob Tibshirani).The data contains 1070 purchases where the customer either purchased Citrus Hill or Minute Maid Orange Juice. A number of characteristics of the customer and product are recorded.The categorical response variable is Purchase  with levels CH and MM indicating whether the customer purchased Citrus Hill or Minute Maid Orange Juice. The goal of this data is to predict which of the two brands of orange juice did customers want to buy based on some seventeen features which describes the product and nature of the customers. The dataset can be  [downloaded here](https://raw.githubusercontent.com/NanaAkwasiAbayieBoateng/ExploratoryDataAnalysis/master/orangejuice.csv). It contains 1070 observations and seveenteen features plus the response variable purchase.
 
